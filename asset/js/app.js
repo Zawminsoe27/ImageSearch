@@ -14,6 +14,8 @@ async function searchImages() {
 	const results = data.results;
 	if (page == 1) {
 		searchImages.innerHTMl = "";
+		showMore.style.display = "none";
+
 	}
 	results.map((result) => {
 		const imageWrapper = document.createElement("div");
